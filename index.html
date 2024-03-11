@@ -11,175 +11,161 @@
       crossorigin="anonymous"
     />
 
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
     <title>Document</title>
   </head>
 
   <body>
-
     <div class="bg">
-    <div class="navi">
-      <p class="heading">STUDENT INFORMATION FORM</p>
+      <div class="navi">
+        <p class="heading">STUDENT INFORMATION FORM</p>
+      </div>
 
+      <div class="align">
+        <form>
+          <div class="mb-3 container main-box">
+            <label for="exampleInputEmail1" class="form-label clr lft">
+              Name</label
+            >
+            <div class="one">
+              <div class="box" id="box1">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  aria-describedby="emailHelp"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="box" id="box2">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  aria-describedby="emailHelp"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+
+            <div class="reg">
+              <label for="exampleInputEmail1" class="form-label clr"
+                >Reg. No.
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="reg"
+                aria-describedby="emailHelp"
+                style="width: 56%"
+              />
+            </div>
+            <div class="age-dob">
+              <div class="age">
+                <label for="exampleInputEmail1" class="form-label clr"
+                  >Age</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="age"
+                  aria-describedby="emailHelp"
+                  style="width: 90%; margin-top: 2px"
+                  ;
+                />
+              </div>
+
+              <div class="three">
+                <label for="birthday" class="clr">DOB : </label>
+                <div class="MB-3">
+                  <input
+                    type="date"
+                    id="dob"
+                    name="birthday"
+                    style="width: 128%; font-size: 20px; height: 38px"
+                  />
+                </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="two">
+              <div>
+                <label for="exampleInputEmail1" class="form-label clr"
+                  >Gender :
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male"
+                  checked
+                />
+                <label class="form-check-label clr" for="flexRadioDefault1">
+                  Male
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  value="female"
+                  id="female"
+                  
+                />
+                <label class="form-check-label clr" for="flexRadioDefault2">
+                  Female
+                </label>
+              </div>
+            </div>
+
+            <div class="four">
+              <label for="exampleInputEmail1" class="form-label clr"
+                >Hobbies
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="hobbies"
+                aria-describedby="emailHelp"
+                style="width: 49%"
+              />
+            </div>
+
+            <div class="five">
+              <label for="exampleInputEmail1" class="form-label clr"
+                >Department
+              </label>
+              <div class="dropdown">
+                <select  id="test-dropdown" class="custom-select str">
+                  <option selected>Select Department</option>
+                  <option  value="CSE">CSE</option>
+                  <option  value="IT">IT</option>
+                  <option  value="ECE">ECE</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="six">
+              <!-- <button type="submit" class="btn btn-primary button">Submit</button> -->
+              <button onclick="test()" type="submit" class="button" id="button">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-
-    <div class="align">
-    <form>
-      <div class="mb-3 container main-box">
-        <label for="exampleInputEmail1" class="form-label clr lft"> Name</label>
-        <div class="one">
-          <div class="box" id="box1">
-            
-          <input
-            type="text"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="First Name"
-            
-            
-          />
-          
-        </div>
-        <div class="box" id="box2">
-          <input
-            type="text"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Last Name"
-          />
-        </div>
-
-        </div>
-
-        <div class="reg">
-
-          <label for="exampleInputEmail1" class="form-label clr">Reg. No. </label>
-          <input
-            type="text"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            style="width: 56%"
-          />
-
-        </div>
-        <div class="age-dob">
-
-        
-        <div class="age">
-
-          <label for="exampleInputEmail1" class="form-label clr">Age</label>
-          <input
-            type="text"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            style="width: 90%; margin-top:2px";
-          />
-
-        </div>
-
-        <div class="three">
-          <label for="birthday" class="clr">DOB : </label>
-          <div class="MB-3">
-            <input type="date" id="birthday" name="birthday" style="width: 128%; font-size: 20px; height: 38px;"/>
-          </div>
-        </div>
-
-      </div>
-          <!-- </div> -->
-        
-
-
-
-
-        <div class="two">
-          <div>
-            <label for="exampleInputEmail1" class="form-label clr">Gender : </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault1"
-            />
-            <label class="form-check-label clr" for="flexRadioDefault1">
-              Male
-            </label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="flexRadioDefault"
-              id="flexRadioDefault2"
-              checked
-            />
-            <label class="form-check-label clr" for="flexRadioDefault2">
-              Female
-            </label>
-          </div>
-        </div>
-
-
-
-
-        
-
-
-
-        <div class="four">
-          <label for="exampleInputEmail1" class="form-label clr">Hobbies </label>
-          <input
-            type="text"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            style="width: 56%"
-          />
-        </div>
-
-
-
-
-        <div class="five">
-          <label for="exampleInputEmail1" class="form-label clr">Department </label>
-          <div class="dropdown">
-            <select class="custom-select str">
-              <option selected>Select Department</option>
-              <option value="1">CSE</option>
-              <option value="2">IT</option>
-              <option value="3">ECE</option>
-            </select>
-          </div>
-        </div>
-
-
-
-
-
-        <div class="six">
-          <!-- <button type="submit" class="btn btn-primary button">Submit</button> -->
-          <button type="submit" class="button" id="button">Submit</button>
-        </div>
-
-
-
-
-      </div>
-    </form>
-  </div>
-
-  </div>
     <script src="main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-
 
   </body>
 </html>
