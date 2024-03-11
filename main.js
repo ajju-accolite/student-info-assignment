@@ -1,9 +1,7 @@
-
-
 function test() {
 
 
-  // using javascript
+  // using JAVASCRIPT
   // var firstName = document.getElementById("firstName");
   // var lastName = document.getElementById("lastName");
   // var reg = document.getElementById("reg");
@@ -15,8 +13,7 @@ function test() {
 
   // greetMe(firstName.value + " " + lastName.value,reg.value,dob.value,age.value,hobbies.value)
 
-
-  // using jquery
+  // using JQUERY
   var firstName = $("#firstName").val();
   var lastName = $("#lastName").val();
   var reg = $("#reg").val();
@@ -26,7 +23,7 @@ function test() {
   var gender = $("input[name='gender']:checked").val();
   var department = $("#test-dropdown option:selected").val();
 
-  greetMe(
+  show(
     firstName + " " + lastName,
     reg,
     dob,
@@ -36,42 +33,13 @@ function test() {
     department
   );
 
-  function greetMe(yourName, reg, dob, age, hobbies, gender, department) {
+  function show(yourName, reg, dob, age, hobbies, gender, department) {
     alert(
       `Hello ${yourName}, your registration number is ${reg}, Your dob is ${dob} and you are ${age} years old, Your hobbies are ${hobbies} and you are ${gender}, you are from ${department} department`
     );
   }
 }
 
-
-
-$("#button").click(test);
-
-// function greetMe(yourName, reg, age, dob, hobbies) {
-//   alert(
-//     `hello ${yourName} , Your Registration Number is ${reg}, You are ${age} years old, Your dob is : ${dob} Your hobbies are ${hobbies}, you are from ${department} department`
-//   );
-// }
-
-// var x = document.getElementById("test-dropdown");
-// var firstName = $("#firstName")
-// var lastName = $("#firstName")
-// var department = $("#firstName")
-
-// firstName[0].css()
-
-//   gender.value
-
-//   greetMe(firstName[0].value + " " + lastName[0].value);
-
-// git init
-// git add .
-// git commit
-// git push
-
-// git pull
-// git merge
-// git branch
-
-// git restore --stays
-// git clone
+$("document").ready(function () {
+  $("#button").click(test);
+});

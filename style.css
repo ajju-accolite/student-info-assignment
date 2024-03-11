@@ -6,13 +6,11 @@ html {
 }
 
 .bg {
-  /* width: 44%; */
   background-image: url("background.webp");
   height: 130%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* width: 76%; */
 }
 .navi {
   width: 100%;
@@ -21,13 +19,8 @@ html {
   background-color: rgb(27, 7, 7);
 }
 
-/* div.mb-3.container.main-box{
-    margin-left: 33%;
-} */
-
 .clr {
   color: rgb(233, 193, 193);
-  /* margin-left: 343px; */
 }
 .lft {
   margin-left: 343px;
@@ -39,7 +32,6 @@ html {
   font-size: 40px;
   font-weight: 400;
   font-family: "Times New Roman", Times, serif;
-  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
 }
 .one {
   display: flex;
@@ -49,32 +41,24 @@ html {
 }
 .two {
   margin-bottom: 20px;
-  /* margin-left: 343px; */
   margin-left: 460px;
 }
 .three {
-  /* margin-bottom: 20px; */
-  /* margin-left: 343px; */
   margin-top: 10px;
   height: 38px;
 }
 .four {
   margin-bottom: 20px;
-  /* margin-left: 343px; */
   margin-left: 460px;
 }
 .five {
   margin-bottom: 20px;
-  /* margin-left: 343px; */
   margin-left: 460px;
 }
 .six {
-  /* margin-left: 100px; */
   margin-left: 530px;
 }
-/* .btn-primary{
-    width: 140px;
-} */
+
 .age {
   margin-bottom: 20px;
   margin-left: 343px;
@@ -110,4 +94,3 @@ html {
 .age-dob {
   display: flex;
 }
-
