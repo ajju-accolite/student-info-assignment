@@ -37,8 +37,14 @@ function test() {
   let newData = {
     firstName: firstName,
     lastName: lastName,
+    reg: reg,
+    age: age,
+    dob: dob,
+    hobbies: hobbies,
+    gender: gender,
+    department: department,
   };
-  
+
   arr.push(newData);
   console.log(arr);
 
