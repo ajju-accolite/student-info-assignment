@@ -7,10 +7,11 @@ html {
 
 .bg {
   background-image: url("background.webp");
-  height: 130%;
+  height: 120%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  /* height: fit-content; */
 }
 .navi {
   width: 100%;
@@ -94,3 +95,110 @@ html {
 .age-dob {
   display: flex;
 }
+
+/* @media (max-width: 947px) {
+  .bg {
+    width: 200%;
+    height: 250%;
+  }
+  .one {
+    margin-left: 260px;
+  }
+  .two {
+    margin-left: 280px;
+  }
+  .reg {
+    margin-left: 260px;
+  }
+  .age {
+    margin-left: 260px;
+  }
+  .dob {
+    margin-left: 260px;
+  }
+
+  .four {
+    margin-left: 280px;
+  }
+  .five {
+    margin-left: 280px;
+  }
+
+  .six {
+    margin-left: 280px;
+  }
+}
+
+
+
+
+@media (max-width: 700px) {
+  .bg {
+    width: 240%;
+    height: 240%;
+  }
+  .one {
+    margin-left: 260px;
+  }
+  .two {
+    margin-left: 280px;
+  }
+  .reg {
+    margin-left: 260px;
+  }
+  .age {
+    margin-left: 260px;
+  }
+  .dob {
+    margin-left: 260px;
+  }
+
+  .four {
+    margin-left: 280px;
+  }
+  .five {
+    margin-left: 280px;
+  }
+
+  .six {
+    margin-left: 280px;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 1400px) {
+  .bg {
+    width: 100%;
+    height: 100%;
+  }
+  .one {
+    margin-left: 260px;
+  }
+  .two {
+    margin-left: 300px;
+  }
+  .reg {
+    margin-left: 260px;
+  }
+  .age {
+    margin-left: 260px;
+  }
+  .dob {
+    margin-left: 260px;
+  }
+
+  .four {
+    margin-left: 300px;
+  }
+  .five {
+    margin-left: 300px;
+  }
+
+  .six {
+    margin-left: 280px;
+  }
+} */

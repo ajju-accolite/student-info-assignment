@@ -1,6 +1,4 @@
 function test() {
-
-
   // using JAVASCRIPT
   // var firstName = document.getElementById("firstName");
   // var lastName = document.getElementById("lastName");
@@ -23,15 +21,28 @@ function test() {
   var gender = $("input[name='gender']:checked").val();
   var department = $("#test-dropdown option:selected").val();
 
-  show(
-    firstName + " " + lastName,
-    reg,
-    dob,
-    age,
-    hobbies,
-    gender,
-    department
-  );
+  const arr = [
+    {
+      firstName: firstName,
+      lastName: lastName,
+      reg: reg,
+      age: age,
+      dob: dob,
+      hobbies: hobbies,
+      gender: gender,
+      department: department,
+    },
+  ];
+
+  let newData = {
+    firstName: firstName,
+    lastName: lastName,
+  };
+  
+  arr.push(newData);
+  console.log(arr);
+
+  show(firstName + " " + lastName, reg, dob, age, hobbies, gender, department);
 
   function show(yourName, reg, dob, age, hobbies, gender, department) {
     alert(
